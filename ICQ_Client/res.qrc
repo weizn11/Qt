@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/images/background">
+        <file>res/regBackground.jpg</file>
+        <file>res/lan7.jpg</file>
+        <file>res/mainBG1.jpg</file>
+        <file>res/mainBG2.jpg</file>
+        <file>res/mainBG3.jpg</file>
+        <file>res/mainBG4.jpg</file>
+        <file>res/mainBG6.jpg</file>
+        <file>res/mainBG7.jpg</file>
+        <file>res/mainBG8.jpg</file>
+        <file>res/mainBG9.jpg</file>
+        <file>res/mainBG5.jpg</file>
+        <file>res/mainBG10.jpg</file>
+        <file>res/card1.jpg</file>
+        <file>res/chatBG1.jpg</file>
+        <file>res/chatBG2.jpg</file>
+    </qresource>
+    <qresource prefix="/images/button">
+        <file>res/lan.png</file>
+        <file>res/lan2.png</file>
+        <file>res/lan3.png</file>
+        <file>res/close.png</file>
+        <file>res/closeP.png</file>
+        <file>res/closeS.png</file>
+        <file>res/narrow.png</file>
+        <file>res/narrowP.png</file>
+        <file>res/narrowS.png</file>
+        <file>res/sendFile.jpg</file>
+    </qresource>
+    <qresource prefix="/images/icon">
+        <file>res/ico.ico</file>
+    </qresource>
+    <qresource prefix="/images/portrait">
+        <file>res/boy.jpg</file>
+        <file>res/girl.jpg</file>
+        <file>res/groupIcon.jpg</file>
+    </qresource>
+</RCC>
