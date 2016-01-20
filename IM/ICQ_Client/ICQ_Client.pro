@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     ctooltip.cpp \
     creategroup.cpp \
     findgroupwindow.cpp \
-    groupslistview.cpp
+    groupslistview.cpp \
+    basic/dnsquery.cpp
 
 HEADERS  += mainwindow.h \
     loginwindow.h \
@@ -50,7 +51,8 @@ HEADERS  += mainwindow.h \
     ctooltip.h \
     creategroup.h \
     findgroupwindow.h \
-    groupslistview.h
+    groupslistview.h \
+    basic/dnsquery.h
 
 FORMS    += mainwindow.ui \
     loginwindow.ui \

@@ -78,6 +78,14 @@ private:
     int recv_icon(ICON_TRAN_DATA *pIconData);
 };
 
+class KeepAliveThread : public Thread
+{
+public:
+    KeepAliveThread();
+protected:
+    int func(void *threadPara);
+};
+
 class FileSendThread : public QThread
 {
     Q_OBJECT

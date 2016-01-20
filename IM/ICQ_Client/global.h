@@ -32,7 +32,7 @@
 
 using namespace std;
 
-#define SERVER_IP "192.168.8.128"
+#define SERVER_DOMAIN "im.weizn.net"
 #define SERVER_PORT 7437
 
 #define MAX_RECV_SIZE 3000
@@ -124,6 +124,7 @@ typedef struct
 typedef struct
 {
     /*
+     * 0:KEEP-ALIVE
      * 1:P2P_CONN_INFO 2:AUTH_ACCOUNT_DATA 3:REGISTER_ACCOUNT_DATA 4:find_find(),ACCOUNT_INFO_DATA
      * 5:add_friend() FRIENDSHIP_INFO_DATA  6:update_friend_item FRIEND_INFO_DATA
      * 7:update_account_data() ACCOUNT_INFO_DATA  8:ICON_TRAN_DATA

@@ -4,6 +4,7 @@
 #include "mainwindow.h"
 #include "groupslistview.h"
 
+extern char SERVER_IP[16];
 extern P2P gl_P2P;
 extern ServerConn gl_Server_Conn_Info;
 RECV_SIGNAL gl_Recv_Signal;
@@ -29,6 +30,9 @@ RecvThread::RecvThread(QObject *parent) :
 
 void RecvThread::run()
 {
+    KeepAliveThread gl_KeepAlive;
+
+    gl_KeepAlive.run(NULL);
     recv_data_from_server();
     return;
 }
@@ -958,6 +962,34 @@ void P2PFileRecvThread::recv_file_from_friend(SOCKET soc)
 
     return;
 }
+
+KeepAliveThread::KeepAliveThread()
+{
+    return;
+}
+
+KeepAliveThread::func(void *threadPara)
+{
+    MAIN_PACKET packet;
+
+    memset(&packet,0x00,sizeof(packet));
+
+    while(1)
+    {
+        gl_Server_Conn_Info.ex_send((char *)&packet,sizeof(packet),0);
+        Sleep(10000);   //十秒一次心跳包
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

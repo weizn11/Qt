@@ -3,6 +3,7 @@
 
 P2P gl_P2P;
 extern ServerConn gl_Server_Conn_Info;
+extern char SERVER_IP[16];
 
 P2P::P2P()
 {
